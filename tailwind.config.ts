@@ -9,9 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#FBEBB5",
+        light: "FFFFFF",
       },
+      screens: {
+				xs: '360px',
+				sm: '640px',
+				md: '768px',
+				lg: '960px',
+				xl: '1200px'
+			},
+			fontFamily: {
+				primary: "poppins, sans-serif",
+			},
     },
   },
   plugins: [],
