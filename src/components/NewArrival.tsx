@@ -22,7 +22,7 @@ const NewArrival = () => {
           <h1 className="text-2xl md:text-3xl mb-7 lg:text-5xl font-extrabold ">
             Asgaard Sofa
           </h1>
-          <button className="px-12 py-3 text-sm mb-6 font-medium border-2 border-black">
+          <button className="px-12 py-3 text-sm mb-6 font-medium border-2 border-black hover:bg-black hover:text-white transition">
             Order Now
           </button>
         </div>

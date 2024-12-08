@@ -15,8 +15,8 @@ const help = [
 
 const Footer = () => {
   return (
-    <footer className="pt-20 pb-6 px-20">
-      <div className="mx-auto px-4 grid lg:grid-cols-4 gap-3 xs:grid-cols-1 xs:gap-8">
+    <footer className="pt-20 pb-6 px-12 lg:px-20">
+      <div className="mx-auto flex flex-col lg:flex-row gap-10 lg:gap-44">
         {/* address section */}
         <div className="flex items-center text-gray-400">
           <p className="">
@@ -29,7 +29,7 @@ const Footer = () => {
           <h3 className="text-gray-400 text-sm font-medium mb-7">Links</h3>
           <ul className="space-y-7 text-sm font-medium">
             {links.map((link, index) => (
-              <Link key={index} href={link.path} className="block">
+              <Link key={index} href={link.path} className="block hover:scale-105">
                 {link.name}
               </Link>
             ))}
@@ -40,7 +40,7 @@ const Footer = () => {
           <h3 className="text-gray-400 text-sm font-medium mb-7">Help</h3>
           <ul className="space-y-7 text-sm font-medium">
             {help.map((link, index) => (
-              <Link key={index} href={link.path} className="block">
+              <Link key={index} href={link.path} className="block hover:scale-105">
                 {link.name}
               </Link>
             ))}
@@ -54,9 +54,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter Your Email Address"
-              className="flex-1 outline-none border-b border-black placeholder-gray-400 text-black text-sm py-2 w-full sm:w-auto"
+              className="outline-none border-b border-black placeholder-gray-400 text-black text-sm py-2"
             />
-            <button className="mt-4 sm:mt-0 sm:ml-4 font-medium tracking-wide text-black border-b border-black">
+            <button className="pt-3 sm:mt-0 sm:ml-4 font-medium tracking-wide text-black border-b border-black cursor-pointer">
               SUBSCRIBE
             </button>
           </div>

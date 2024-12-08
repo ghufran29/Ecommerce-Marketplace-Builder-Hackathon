@@ -17,7 +17,7 @@ const OurBlogs = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 mb-14 lg:mt-16">
         {blogs.map((blog, index) => (
-          <div key={index}>
+          <div key={index} className="py-3 px-2 hover:shadow-lg rounded-md">
             <Image
               src={blog.image}
               width={300}
@@ -27,7 +27,7 @@ const OurBlogs = () => {
             />
             <div className="text-center space-y-3">
               <h4 className="text-xl font-medium mt-6">{blog.title}</h4>
-              <LinkButton text="Read More" href="/shop" />
+              <LinkButton text="Read More" href="/blog" />
             </div>
             <div className="flex justify-center gap-4 mt-6">
               <div className="flex items-center gap-2">
@@ -44,7 +44,7 @@ const OurBlogs = () => {
           </div>
         ))}
       </div>
-      <LinkButton text="View All Post" href="/shop" />
+      <LinkButton text="View All Post" href="/blog" />
     </section>
   );
 };

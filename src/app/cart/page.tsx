@@ -35,16 +35,21 @@ const page = () => {
       </div>
 
       {/* cart section */}
-      <div className="py-12 px-36 flex flex-col-1 lg:flex-clols-2 gap-10">
+      <div className="py-6 px-4 lg:py-12 lg:px-36 flex flex-col justify-center lg:flex-row gap-10">
+        {/* Products Section */}
         <div className="flex flex-col">
-          <div className="bg-[#FFF9E5] flex px-32 py-4 rounded-md">
-            <h4 className="font-semibold">Product</h4>
-            <h4 className="font-semibold ml-24">Price</h4>
-            <h4 className="font-semibold ml-32">Quantity</h4>
-            <h4 className="font-semibold ml-10">Subtotal</h4>
+          <div className="bg-[#FFF9E5] flex px-4 py-4 lg:px-32 rounded-md text-sm lg:text-base">
+            <h4 className="font-semibold flex-1">Product</h4>
+            <h4 className="font-semibold flex-1 text-center lg:ml-24">Price</h4>
+            <h4 className="font-semibold flex-1 text-center lg:ml-32">
+              Quantity
+            </h4>
+            <h4 className="font-semibold flex-1 text-center lg:ml-10">
+              Subtotal
+            </h4>
           </div>
           {/* cart product */}
-          <div className="flex items-center mt-12">
+          <div className="flex items-center mt-6 lg:mt-12 text-sm lg:text-base">
             <div className="">
               <Image
                 src="/Asgaard-sofa.png"
@@ -54,28 +59,38 @@ const page = () => {
                 className="bg-[#FBEBB5] rounded-md h-23 w-34"
               />
             </div>
-            <h4 className="ml-10 font-medium text-gray-400">Asgaard Sofa</h4>
-            <h4 className="ml-12 font-medium text-gray-400">Rs. 25,000.00</h4>
-            <h4 className="ml-20 font-medium rounded-sm border border-gray-400 px-3 py-1">1</h4>
-            <h4 className="ml-16 font-medium">Rs. 25,000.00</h4>
-            <TbTrashFilled className="ml-10 text-2xl text-[#FBEBB5] w-5 h-5" />
+            <h4 className="ml-4 lg:ml-10 font-medium text-gray-400">
+              Asgaard Sofa
+            </h4>
+            <h4 className="ml-6 lg:ml-12 font-medium text-gray-400">
+              Rs. 25,000.00
+            </h4>
+            <h4 className="ml-6 lg:ml-20 font-medium rounded-sm border border-gray-400 px-3 py-1">
+              1
+            </h4>
+            <h4 className="ml-6 lg:ml-16 font-medium">Rs. 25,000.00</h4>
+            <TbTrashFilled className="ml-4 lg:ml-10 text-xl lg:text-2xl text-[#FBEBB5] w-5 h-5" />
           </div>
         </div>
         {/* cart total */}
-        <div className="bg-[#FFF9E5] px-20 pt-4 pb-20 rounded-md text-center">
-            <h3 className="text-2xl font-semibold mb-10">Cart Total</h3>
-            <div className="flex gap-12 mb-5">
-                <h5 className="font-semibold">Subtotal</h5>
-                <p className="font-medium text-gray-400">Rs. 25,000.00</p>
-            </div>
-            <div className="flex gap-12">
-                <h5 className="font-semibold">Total</h5>
-                <p className="text-[#B88E2F] text-xl font-medium">Rs. 25,000.00</p>
-            </div>
-            <button className="w-48 py-3 mt-8 rounded-xl text-sm font-semibold border border-black">
-              Check Out
-            </button>
+        <div className="bg-[#FFF9E5] px-4 py-6 lg:px-20 lg:pt-4 lg:pb-20 rounded-md text-center">
+          <h3 className="text-lg lg:text-2xl font-semibold mb-6 lg:mb-10">
+            Cart Total
+          </h3>
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 mb-5">
+            <h5 className="font-semibold">Subtotal</h5>
+            <p className="font-medium text-gray-400">Rs. 25,000.00</p>
           </div>
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
+            <h5 className="font-semibold">Total</h5>
+            <p className="text-[#B88E2F] text-lg lg:text-xl font-medium">
+              Rs. 25,000.00
+            </p>
+          </div>
+          <button className="w-full lg:w-48 py-3 mt-8 rounded-xl text-sm font-semibold border border-black hover:bg-black hover:text-white">
+            Check Out
+          </button>
+        </div>
       </div>
 
       <Quality />

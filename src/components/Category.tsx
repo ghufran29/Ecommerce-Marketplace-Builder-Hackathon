@@ -11,8 +11,8 @@ const Category = () => {
             className="ml-auto max-w-full h-auto"
             src="/square-side-table.png"
             alt="Square Side Table"
-            width={600}
-            height={600}
+            width={550}
+            height={550}
             priority
           />
           <div className="text-left">
@@ -27,8 +27,8 @@ const Category = () => {
             className="ml-auto max-w-full h-auto"
             src="/sofa-three-seater.png"
             alt="Three-Seater Sofa"
-            width={600}
-            height={600}
+            width={550}
+            height={550}
             priority
           />
           <div className="text-left">

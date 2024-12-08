@@ -118,7 +118,7 @@ const page = () => {
               ></textarea>
             </div>
 
-            <button className="w-48 py-3 rounded-xl text-sm font-semibold border border-black">
+            <button className="w-48 py-3 rounded-xl text-sm font-semibold border border-black hover:bg-black hover:text-white">
               Submit
             </button>
           </div>

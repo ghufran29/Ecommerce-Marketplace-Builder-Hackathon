@@ -6,7 +6,7 @@ const FollowUs = () => {
       <div className="text-center text-black">
         <h2 className="text-4xl lg:text-5xl font-extrabold mb-4">Our Instagram</h2>
         <p className="mb-5 text-sm lg:text-base">Follow our store on instagram</p>
-        <button className="px-14 py-3 text-sm font-medium bg-white text-black rounded-full shadow-2xl shadow-black">
+        <button className="px-14 py-3 text-sm font-medium bg-white text-black rounded-full border shadow-2xl shadow-black hover:border-black">
           Follow Us
         </button>
       </div>

@@ -20,7 +20,7 @@ const HeroSection = () => {
         {/* Right Section */}
         <div className="lg:w-7/12 flex justify-center">
           <Image
-            className="max-w-full h-auto"
+            className="max-w-full h-auto lg:h-[820px]"
             src="/Rocket-single-seater.png"
             alt="Rocket single seater"
             width={800}
