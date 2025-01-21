@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import Quality from "@/components/ui/Quality";
 import { client } from "@/sanity/lib/client";
-import FilterBar from "@/components/ui/FilterbarAndProducts";
+import FilterbarAndProducts from "@/components/ui/FilterbarAndProducts";
 
 export interface Product {
   name: string;
@@ -55,7 +55,7 @@ const page = async () => {
       </div>
 
       {/* Filter Bar */}
-      <FilterBar categories={categories} products={products} />
+      <FilterbarAndProducts categories={categories} products={products} />
 
 
     <Quality />

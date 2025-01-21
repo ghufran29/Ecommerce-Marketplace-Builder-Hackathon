@@ -9,6 +9,7 @@ export default {
       name: "id",
       title: "ID",
       type: "string",
+      readOnly: true,
     },
     {
       name: "name",

@@ -19,7 +19,7 @@ interface FilterBarProps {
   products: Product[];
 }
 
-const FilterBar: React.FC<FilterBarProps> = ({ categories, products }) => {
+const FilterbarAndProducts: React.FC<FilterBarProps> = ({ categories, products }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [currentPage, setCurrentPage] = useState(1);
@@ -237,4 +237,4 @@ const FilterBar: React.FC<FilterBarProps> = ({ categories, products }) => {
   );
 };
 
-export default FilterBar;
+export default FilterbarAndProducts;

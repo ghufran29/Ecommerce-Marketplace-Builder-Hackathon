@@ -1,0 +1,8 @@
+Test Case ID,Description,Steps,Expected Result,Actual Result,Status,Severity,Remarks
+TC001,Validate Product Listing Page,Open Products Page > Validate Products,Products display successfully,Products display successfully,Pass,Low,No issues found
+TC002,Test API Error Handling,Disconnect GROQ Query > Refresh Page,Show error message on screen,Show error message on screen,Pass,Low,Handled gracefully
+TC003,Check Cart Functionality,Add to Cart > Navigate to Cart,Displaying products in cart,Displaying products in cart,Pass,Medium,Successfully
+TC004,Ensure Responsiveness on Mobile,Inspect > Device Toolbar > Select Mobile Device,Show content according to device,Show content according to device,Pass,Medium,Responsive
+TC005,Validate Search Bar,Search items not in Sanity,Show dropdown > No product found,Dropdown not showing while searching irrelevant items,Fail,High,Don't show error
+TC006,Validate Dynamic Product Detail Pages,Open product page > Click any product card,Open dynamic product detail pages,Open dynamic product detail pages,Pass,Low,Successfully
+TC007,Cross Browser Testing,"Open website on different browsers (e.g., Chrome, Edge)",Work correctly on every browser,Work correctly on every browser,Pass,Low,Successfully
