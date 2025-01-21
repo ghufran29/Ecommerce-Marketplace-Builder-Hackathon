@@ -65,7 +65,7 @@ const Footer = () => {
 
       {/* copyright section */}
       <div className="max-w-8xl mx-auto px-4 mt-8 pt-8 border-t border-gray-300  text-sm">
-        <p>2022 Meubel House. All right reserved</p>
+        <p>2024 Modern Haven Furniture. All right reserved.</p>
       </div>
     </footer>
   );

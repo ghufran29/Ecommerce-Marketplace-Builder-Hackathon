@@ -9,10 +9,10 @@ const HeroSection = () => {
         {/* Left Section */}
         <div className="lg:w-5/12 text-center lg:text-left space-y-6 lg:pl-40 pl-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium ">
-            Rocket single
+            Rocket Single
           </h1>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium">
-            seater
+            Seater
           </h1>
           <LinkButton text="Shop Now" href="/shop" />
         </div>
@@ -26,6 +26,7 @@ const HeroSection = () => {
             width={800}
             height={800}
             priority
+            
           />
         </div>
       </div>

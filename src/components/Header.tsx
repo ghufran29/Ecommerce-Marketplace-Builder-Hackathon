@@ -6,6 +6,8 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useState } from "react";
 import Image from "next/image";
+import { useSelector } from "react-redux";
+import { RootState } from "@/Redux/store";
 
 const links = [
   { name: "Home", path: "/" },
@@ -15,14 +17,17 @@ const links = [
 ];
 
 const icons = [
-  { icon: <TbUserExclamation />, path: "/account" },
-  { icon: <FiSearch />, path: "/product/1" },
-  { icon: <IoMdHeartEmpty />, path: "/product/1" },
+  { icon: <TbUserExclamation />, path: "/" },
+  { icon: <FiSearch />, path: "/shop" },
+  { icon: <IoMdHeartEmpty />, path: "/" },
   { icon: <AiOutlineShoppingCart />, path: "/cart" },
 ];
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const cartItemCount = useSelector((state: RootState) =>
+    state.cart.cartItems.reduce((total, item) => total + item.quantity, 0)
+  );
   return (
     <nav className="bg-primary py-3 px-4 lg:px-16">
       <div className="flex justify-between items-center">
@@ -49,8 +54,18 @@ const Header = () => {
         {/* Icons */}
         <div className="flex items-center space-x-6 lg:space-x-10 text-2xl">
           {icons.map((icon, index) => (
-            <Link href={icon.path} key={index} className="hover:text-[#b9982b] transition cursor-pointer">
+            <Link
+              href={icon.path}
+              key={index}
+              className="relative hover:text-[#b9982b] transition cursor-pointer"
+            >
               {icon.icon}
+              {index === 3 &&
+                cartItemCount > 0 && ( // Only add the badge to the cart icon
+                  <span className="absolute top-[-10px] right-[-8px] bg-[#b9982b] text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    {cartItemCount}
+                  </span>
+                )}
             </Link>
           ))}
           {/* Mobile Menu Toggle */}
